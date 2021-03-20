@@ -1,0 +1,110 @@
+body {
+	background-color: rgba(30, 30, 128, 0.3); /* Azul al 10% */
+	margin:0px;
+	font-family: 'Nunito', sans-serif;
+}
+
+.menu {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.menu a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	background-color: red;
+}
+		
+a:active {
+	color:yellow;
+	font-size:1.1em;			
+}
+
+.menuV {
+	overflow: hidden;
+	background-color: #333;
+	width:100%;
+	display:block;
+}
+
+.menuV a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.menuV a:hover {
+	background-color: red;
+}
+
+@media screen and (max-width:600px){			
+	.menu, .menu a{
+		width:100%;
+		float: none;
+		display:block;
+	}
+			
+}
+
+*{
+	box-sizing: border-box;
+	padding: 3px;
+	margin: 1px;
+}
+		
+.marco {
+	display: grid;
+	border-style: solid;
+	grid-template-columns: 250px auto;
+	grid-template-rows: 150px 40px auto 40px;
+	grid-gap: 10px;
+	width: 100vw;
+	height: 100vh;
+}
+		
+.encabezado {
+	border-style: solid;
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 1;
+}
+		
+.migas {
+	border-style: solid;
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 1;
+}
+		
+.lado {
+	border-style: solid;
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 1;
+
+}
+		
+.contenido {
+	border-style: solid;
+	grid-column: 2 / span 1;
+	rid-row: 3 / span 1;
+}
+		
+.pie {
+	border-style: solid;
+	grid-column: 1 / span 2;
+	grid-row: 4 / span 1;
+}
+.contador{
+			float: right;
+			color: aqua;
+			font-size: 20px;
+			margin-right:20px
+		}
