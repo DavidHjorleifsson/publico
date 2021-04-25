@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registrados>
+	<usuario nro="1">
+		<nombre>USR1	</nombre>
+		<clave>CLAVE1</clave>
+	</usuario>
+	<usuario nro="2">
+		<nombre>USR2	</nombre>
+		<clave>CLAVE2</clave>
+	</usuario>
+	<usuario nro="3">
+		<nombre>USR3	</nombre>
+		<clave>CLAVE3</clave>
+	</usuario>
+	<usuario nro="4">
+		<nombre>USR4	</nombre>
+		<clave>CLAVE4</clave>
+	</usuario>
+	<usuario nro="5">
+		<nombre>DAVID</nombre>
+		<clave>HJORLEIFSSON</clave>
+	</usuario>
+</registrados>
