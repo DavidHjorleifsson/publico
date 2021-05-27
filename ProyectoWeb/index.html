@@ -3,25 +3,20 @@
 
 <head>
 <link href="css/bonito.css" rel="stylesheet"/>
-<script type="text/javascript" href="js/funciones.js"></script>
 <title>Proyecto Rally y Carreras</title>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="js/funciones.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
-		<header>
+<body onload="controlar()">
+		<header style="height:500px;">
 			<!--Logo tipo con mi nombre sobrepuesto en la imagen header-->
 			<div style="position:absolute;z-index:2;display:flex">
 				<img src="media/logotipo.png" alt="Logo Rally y Carreras" style="width:60px;height:60px;"/>
 				<p style="color:white;font-size:20px;">Proyecto David Hjorleifsson Luque</p>
-			</div>
-		
-			<!--Imagen como header-->
-			<div style="background-color:#000000;z-index:1;">
-				<img src="media/fondo4.jpg" alt="Rally contrareloj" style="object-position:center;width:auto;height:auto;"/>
-			</div>
-		
+			</div>		
 		</header>
 
 		
@@ -39,9 +34,21 @@
 		
 
 		
-		<!--índice de la página-->
+		<!--Inicio de sesión/desconectar-->
 		<aside class="indice">
-		INDICE
+		
+				<form method="GET" id="ingresar" name="miFormulario" action="#" onSubmit="return intentar()">
+					<label for="apellido" class="titulo">Inicio de sesión</label><br/>
+					<label for="apellido">Usuario:</label>
+					<input type="text" id="usr" name="formUsuario" required></input><br/><br/>
+					<label for="apellido">Clave:</label>
+					<input type="text" id="clv" name="formClave" required></input><br/><br/>
+					<input type="submit" value="INGRESAR"></input>
+				</form>
+				
+		<div id="desconectar">
+			<button  id="disco" onclick="desconectar()">DESCONECTAR</button>
+		</div>
 		</aside>
 		
 		<!--Contenido principal de la página-->

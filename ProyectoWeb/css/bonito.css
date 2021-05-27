@@ -4,6 +4,12 @@ body {
 	margin:0px;
 }
 
+header{
+	background-image: url("https://media.motorbox.com/image/polo-r-wrc-2016/5/5/7/557926/557926-16x9-lg.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: scroll;
+}
 .menu {
 	display:flex;
 	overflow: hidden;
@@ -28,6 +34,7 @@ body {
 	color:#0066ff;
 	font-style:oblique;
 	text-shadow:1px 1px 2px black;
+	font-family: copperplate, fantasy, copperplate;
 }		
 a:active {
 	color:rgba(179, 0, 0,0.5);
@@ -51,7 +58,10 @@ a:active {
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	
 }
-
+div>p{
+	text-align:center;
+	
+}
 .bordesCajas{
 	border-radius: 0px 80px 38px 40px;
 	-moz-border-radius: 0px 80px 38px 40px;
@@ -81,11 +91,28 @@ a:active {
 		
 	}		
 }
+.ingresar{
+	padding:5px;
+	margin-top:5px;
+	margin-bottom:8px;
+	margin-left:3px;
+	margin-right:2px;
+	background-color:blue;
+	height:70%;
+	width:90%;
+}
 
 *{
 	box-sizing: border-box;
 }
-	
+
+.titulo{
+	display: flex;
+	text-align:center;
+	font-size:20px;
+	font-family: copperplate, fantasy, copperplate;
+}
+
 .marco {
 	display: grid;
 	border-style: inset;
@@ -99,12 +126,14 @@ a:active {
 	padding-right:30px;
 	grid-gap:20px;
 }
-		
-		
+
 .indice {
 	border-style: solid;
 	grid-column: 1 / span 1;
 	grid-row: 1 / span 1;
+	display:block;
+	background-color:rgba(23,200,120,0.4);
+	border: 2px solid #2e082e;
 }
 .anuncio1{
 	border-style: solid;
@@ -121,6 +150,9 @@ a:active {
 	border-style: solid;
 	grid-column: 2 / span 2;
 	grid-row: 1 / span 4;
+	background-color:black;
+	color:white;
+	text-align:center;
 }
 .pie {
 	border-style: groove;
