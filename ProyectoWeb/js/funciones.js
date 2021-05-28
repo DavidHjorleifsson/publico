@@ -103,7 +103,7 @@ function controlar(){
 		document.getElementById("usrEscrito").innerHTML = sessionStorage.getItem("usuarioLogueado");
 
 	}
-	
+
 	
 	function desconectar(){
 		sessionStorage.removeItem("usuarioLogueado");
