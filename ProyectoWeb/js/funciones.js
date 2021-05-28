@@ -120,6 +120,10 @@ function clickCounter(){
 	}
 	$("#mensaje").text(sessionStorage.contador);
 }
-function Atras() {
+function atras() {
   window.history.back();
+}
+
+function cambio(){
+	document.getElementById("sip").style.backgroundImage = "url(https://i.gifer.com/MDOt.gif)";
 }
