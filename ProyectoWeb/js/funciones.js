@@ -1,13 +1,4 @@
-function clickCounter(){
-	if(sessionStorage.contador){
-	sessionStorage.contador=Number(sessionStorage.contador) + 1;
-	}else{
-		sessionStorage.setItem("contador", 1);
-	}
-	$("#mensaje").text(sessionStorage.contador);
-}
-let usrIntentando = "";
-let claveIntentando = "";
+
 
 let usrIntentando = "";
 let claveIntentando = "";
@@ -17,7 +8,7 @@ function controlar(){
 	// 1 - sin usuario
 	// 2 - usuario intentando ingresar
 	// 3 - usuario con sesion iniciada
-	$("#ingresar").show();
+	$("#ingreso").show();
 	$("#desconectar").hide();
 	for(let timer=1;timer<5000000;timer++);	
 			
@@ -26,7 +17,7 @@ function controlar(){
 		// estamos cargando la página teniendo un usuario logueado previamente
 		// y con la sesión activa pues no se ha desconectado aún
 		// ocultamos formulario de login y mostramos desconectar
-		$("#ingresar").hide();
+		$("#ingreso").hide();
 		$("#desconectar").show();	
 		
 	} else {
@@ -37,23 +28,24 @@ function controlar(){
 			validarXML();
 			// tardo un poco en recargar para dar tiempo a AJAX?
 			for(let timer=1;timer<5000000;timer++);
-			$("#ingresar").hide();
+			$("#ingreso").hide();
 			$("#desconectar").show();	
 			
 		} else {
 			// estado 1 de nuestro diagrama de estados - sin usuario
 			// mostramos formulario de login y ocultamos desconectar
-			$("#ingresar").show();
+			$("#ingreso").show();
 			$("#desconectar").hide();
 		}
 	}
+	
 }
 	
 	function intentar(){
 		if (typeof(Storage) !== "undefined") {
 		  
 		  // oculta la opción de login 
-		  $("#ingresar").hide();
+		  $("#ingreso").hide();
 		  
 		  // Almacena un valor usando el método setItem del objeto localStorage
 		  var x=document.forms["miFormulario"]["formUsuario"].value;
@@ -109,18 +101,9 @@ function controlar(){
 	}
 	function usrMostrar(){
 		var res="";
-		var.setElementById("#usrEscrito",usuarioIntentando);
+		$("#usrEscrito").text(usuarioIntentando);
 	}
 	
-	function ocultar(){
-		$("#ingresar").hide();
-		$("#desconectar").show();
-		
-	}
-	function mostrar(){
-		$("#ingresar").show();
-		$("#desconectar").hide();
-	}
 	
 	function desconectar(){
 		sessionStorage.removeItem("usuarioLogueado");
@@ -129,3 +112,14 @@ function controlar(){
 		window.location.reload();
 	}
 	
+function clickCounter(){
+	if(sessionStorage.contador){
+	sessionStorage.contador=Number(sessionStorage.contador) + 1;
+	}else{
+		sessionStorage.setItem("contador", 1);
+	}
+	$("#mensaje").text(sessionStorage.contador);
+}
+function Atras() {
+  window.history.back();
+}
