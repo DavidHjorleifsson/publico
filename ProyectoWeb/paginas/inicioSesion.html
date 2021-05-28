@@ -39,10 +39,14 @@
 
 		<!--Contenido principal de la página-->
 		<article class="contenido">
-		MAIN
-		<div class="contenedor">
-		Hola
-		</div>
+		<form method="GET" id="ingreso" name="miFormulario" action="#" onSubmit="return intentar()">
+			<label for="apellido">Usuario:</label>
+			<input type="text" id="usr" name="formUsuario" required><br>
+			<label for="apellido">Clave:</label>
+			<input type="text" id="clv" name="formClave" required><br>
+			<input type="submit" value="INGRESAR">
+		</form>
+		<button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
 		</article>
 		
 		<!--Espacio lateral derecho para anuncios-->
