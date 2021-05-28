@@ -100,8 +100,8 @@ function controlar(){
 	  }
 	}
 	function usrMostrar(){
-		var res="";
-		$("#usrEscrito").text(usuarioIntentando);
+		document.getElementById("usrEscrito").innerHTML = sessionStorage.getItem("usuarioLogueado");
+
 	}
 	
 	
