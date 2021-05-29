@@ -6,7 +6,9 @@ body {
 	background-repeat: round;
 	color:white;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 header{
 	background-image: url("https://media.motorbox.com/image/polo-r-wrc-2016/5/5/7/557926/557926-16x9-lg.jpg");
 	background-repeat: round;
@@ -145,7 +147,11 @@ border: 7px double #7422a8;
 	text-align:center;
 	font-size:20px;
 	font-family: copperplate, fantasy, copperplate;
+	width: 100%;
+	justify-content: center;
+	border-top:1px solid white;
 }
+
 
 .marco {
 	display: grid;
@@ -169,6 +175,8 @@ border: 7px double #7422a8;
 	color:black;
 	border: 2px solid #2e082e;
 	padding:5px;
+	position:sticky;
+	top:120px;
 }
 .anuncio1{
 	border-style: solid;
@@ -189,6 +197,13 @@ border: 7px double #7422a8;
 	color:white;
 	text-align:center;
 	justify-content: center;
+	padding-top:8px;
+	padding:5px
+}
+.contenedor>img{
+	border-radius: 49px 49px 49px 49px;
+	-moz-border-radius: 49px 49px 49px 49px;
+	-webkit-border-radius: 49px 49px 49px 49px;
 }
 .pie {
 	border-top:1px solid #ebebe0;
