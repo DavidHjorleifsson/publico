@@ -11,14 +11,14 @@
 </head>
 
 <body id="sip" onload="controlar()">
-		<header style="height:500px;">
+		<header>
 			<!--Logo tipo con mi nombre sobrepuesto en la imagen header-->
 			<div style="position:absolute;display:flex">
 				<img src="../media/logotipo.png" alt="Logo Rally y Carreras" style="width:60px;height:60px;"/>
 				<p style="color:white;font-size:20px;text-shadow: 7px 7px #000000;">Proyecto David Hjorleifsson Luque</p>
 			</div>	
 			<div style="font-size:80px;font-family:Impact;color:white;text-align:center;height:100%;width:90%;margin:0 auto;padding:25%;text-shadow: 7px 7px #000000;">
-				RALLY Y CARRERAS
+				TIENDA
 			</div>
 		</header>
 
@@ -42,7 +42,8 @@
 		<aside class="indice">
 			<p style="border-bottom:1px solid #ebebe0">Índice</p>
 			<ul>
-				<li></li>
+				<a href="#setup"><li>Set-up Afiliation 2GT-X</li></a>
+				<a href="#dr"><li>Dirt Rally 2.0</li></a>
 			</ul>
 		<p style="border-bottom:1px solid #ebebe0">TOP SECRET</p>
 		<button onclick="cambio()">TÓCAME</button>
@@ -50,10 +51,39 @@
 		
 		<!--Contenido principal de la página-->
 		<article class="contenido">
-		MAIN
-		<div class="contenedor">
-		Hola
-		</div>
+		TIENDA VIDEOJUEGOS / SET-UPS
+			<div id ="setup" class="contenedorf">
+				<div class="imag">
+					<img src="../media/set carreras.jpg" alt="set up carreras" style="width:500px;height:220px;"/>
+				</div>
+				<div style="text-align:left;flex:50%">
+				Nombre:Set-up Afiliation 2GT-X.<br/><br/>
+				Equipo: 3 pantallas, maquina de cambios, volante con sensación real integrada, asiento ergonómico.<br/><br/>
+				Precio: 5,999.99$.<br/><br/>
+				Descuento prime: -9%.<br/><br/>
+				</div>
+
+				<div style="text-align:left;flex:70%">
+					<iframe width="560" height="270" src="https://www.youtube.com/embed/8flMRtphNLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<div id ="dr" class="contenedorf">
+				<div class="imag">
+					<img src="../media/dirt rally 2.0.jpg" alt="videojuego coches" style="width:500px;height:220px;"/>
+				</div>
+				<div style="text-align:left;flex:50%">
+				Nombre: Dirt Rally 2.0.<br/><br/>
+				Descripción: Videojuego de experiencia cercana a la realidad en carreteras rurales.<br/><br/>
+				Precio: 24.99$.<br/><br/>
+				Descuento prime: -15%.<br/><br/>
+				</div>
+				<div style="text-align:left;flex:70%">
+					<iframe width="560" height="270" src="https://www.youtube.com/embed/mlzClCF-VDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			COMING SOON...
+			
 		</article>
 		
 		<!--Espacio lateral derecho para anuncios-->
